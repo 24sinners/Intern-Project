@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/dashboard}">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<body>
+<div class="main-content container-fluid" layout:fragment="content">
+    <div class="page-title">
+        <h3>Data table</h3>
+    </div>
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                Simple Datatable
+            </div>
+            <div class="card-body">
+                <table class='table table-striped' id="table1">
+                    <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>UserName</th>
+                        <th>Invoice-N0</th>
+                        <th>Email</th>
+                        <th>PhoneNo</th>
+                        <th>Speed Mpbs</th>
+                        <th>Duration</th>
+                        <th>StartDate</th>
+                        <th>EndDate</th>
+                        <th>Amount</th>
+                        <th>Paid</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>01002324</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>095088327</td>
+                        <td>20Mbps</td>
+                        <td>3months</td>
+                        <td>6-Feb-2023</td>
+                        <td>6-May-2023</td>
+                        <td>35000 Kyats</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-323</td>
+                        <td>Hanson</td>
+                        <td>02003222</td>
+                        <td>Hanson@gmail.com</td>
+                        <td>09774753732</td>
+                        <td>60Mbps</td>
+                        <td>4months</td>
+                        <td>12-Feb-2023</td>
+                        <td>12-June-2023</td>
+                        <td>70000 Kyats</td>
+
+                        <td>
+                            <span class="badge bg-danger">N0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-451</td>
+                        <td>UncleSun</td>
+                        <td>23123132</td>
+                        <td>unclesun@gmail.com</td>
+                        <td>09431232732</td>
+                        <td>40Mbps</td>
+                        <td>3months</td>
+                        <td>12-Feb-2023</td>
+                        <td>12-May-2023</td>
+                        <td>45000 Kyats</td>
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-342</td>
+                        <td>Kyaw zaw lin</td>
+                        <td>23123132</td>
+                        <td>rakine@gmail.com</td>
+                        <td>094232322</td>
+                        <td>40Mbps</td>
+                        <td>2months</td>
+                        <td>4-March-2023</td>
+                        <td>4-May-2023</td>
+                        <td>55000 Kyats</td>
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Nay toe</td>
+                        <td>23123132</td>
+                        <td>konaytoe@gmail.com</td>
+                        <td>0983473622</td>
+                        <td>20Mbps</td>
+                        <td>3months</td>
+                        <td>6-Jan-2023</td>
+                        <td>5-Apr-2023</td>
+                        <td>40000 Kyats</td>
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-233</td>
+                        <td>J fire</td>
+                        <td>334342322</td>
+                        <td>helllfire@gmail.com</td>
+                        <td>095088327</td>
+                        <td>30Mbps</td>
+                        <td>1months</td>
+                        <td>5-March-2023</td>
+                        <td>5-May-2023</td>
+                        <td>30000 Kyats</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-1</td>
+                        <td>Bolon</td>
+                        <td>09774753793</td>
+                        <td>12121212121</td>
+                        <td>tiglet165@gmail.com</td>
+                        <td>0984483743</td>
+                        <td>20</td>
+                        <td>3months</td>
+                        <td>1-1-feb</td>
+                        <td>1-5-oct</td>
+
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+</div>
+</body>
+</html>

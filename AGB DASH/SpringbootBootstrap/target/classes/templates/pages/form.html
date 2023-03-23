@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/dashboard}">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<div class="main-content container-fluid" layout:fragment="content">
+    <div class="page-title">
+        <h3>Form</h3>
+        <p class="text-subtitle text-muted">Form</p>
+    </div>
+<section id="multiple-column-form">
+    <div class="row match-height">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Data Form</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="user-id-column">User ID</label>
+                                        <input type="text" id="user-id-column" class="form-control" placeholder="User ID"
+                                               name="fname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="user-name-column">User Name</label>
+                                        <input type="text" id="user-name-column" class="form-control" placeholder="User Name"
+                                               name="Uname-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email-id-column">Email</label>
+                                        <input type="text" id="email-id-column" class="form-control" placeholder="Email" name="email-column">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="Phone-id-column">Phone No</label>
+                                        <input type="text" id="Phone-id-column" class="form-control" name="phone-floating"
+                                               placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="Speed(Mbps)-column">Bandwidth</label>
+                                        <input type="text" id="Speed(Mbps)-column" class="form-control" name="speed-column"
+                                               placeholder="Speed(Mbps)">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="duration-column">Duration</label>
+                                        <input type="text" id="duration-column" class="form-control" name="duration-column"
+                                               placeholder="Duration">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="startdate-column">Start Date</label>
+                                        <input type=date id="startdate-column" class="form-control" name="startdate-column"
+                                               placeholder="Start Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="enddate-column">End Date</label>
+                                        <input type="date" id="enddate-column" class="form-control" name="enddate-column"
+                                               placeholder="End Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="amount-column">Amount</label>
+                                        <input type=text id="amount-column" class="form-control" name="amount-column"
+                                               placeholder="Amount">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <h6>Paid</h6>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect01">
+                                            <option selected>Choose...</option>
+                                            <option value="1">Yes</option>
+                                            <option value="2">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    <div class='form-check'>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="checkbox5" class='form-check-input' checked>
+                                            <label for="checkbox5">Remember Me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</body>
+</html>

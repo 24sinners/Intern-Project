@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="sidebar" class='active' th:fragment="sidebar"><!--sidebar-->
+    <div class="sidebar-wrapper active">
+        <div class="sidebar-header">
+            <img src="images/agb2.png" alt="" srcset="">
+        </div>
+        <div class="sidebar-menu">
+            <ul class="menu">
+
+
+                <li class='sidebar-title'>Main Menu</li>
+
+
+
+                <li class="sidebar-item active ">
+                    <a href="http://localhost:8080/home" class='sidebar-link'>
+                        <i data-feather="home" width="20"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                </li>
+
+
+
+
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <i data-feather="triangle" width="20"></i>
+                        <span>Table</span>
+                    </a>
+
+                    <ul class="submenu ">
+
+                        <li>
+                            <a href="http://localhost:8080/table">Basic Table</a>
+                        </li>
+
+                        <li>
+                            <a href="http://localhost:8080/table-datatable">Datatable</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="sidebar-item active ">
+                    <a href="http://localhost:8080/form" class='sidebar-link'>
+                        <i data-feather="user-plus" width="20"></i>
+                        <span>Form</span>
+                    </a>
+                </li>
+                <li class='sidebar-title'>User Menu</li>
+                <li class="sidebar-item active has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <i data-feather="user" width="20"></i>
+                        <span>Authentication</span>
+                    </a>
+                    <ul class="submenu active">
+                        <li>
+                            <a href="http://localhost:8080/login">Login</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/register">Register</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+    </div>
+</div>
+</body>
+</html>
